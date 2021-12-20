@@ -8,7 +8,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
      <link rel="stylesheet" href="css/style.css">
-     
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
      
      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
@@ -111,19 +111,28 @@
         <div class="carousel-inner">
          
           <div class="carousel-item active ms-5">
+            <div data-aos="zoom-in-up">
+      
+
             <img src="images/slider-book.png" class="d-block ms-5" width="30%" alt="...">
+          </div>
             <div class="carousel-caption d-none d-md-block">
-              <h5 class="fs-2 text-center ms-5">Pick-a-Book</h5>
-              <p class="ms-5">"WHAT I LOVE THE <br>MOST ABOUT READING <br>IS THE SENSATION <br>OF DISCOVERY."</p>
-              <p>Adam Strass</p>
+              <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+
+              <p class="ms-5">"WHAT I LOVE THE <br>MOST ABOUT READING <br>IS THE SENSATION <br>OF DISCOVERY."</p></div>
+              <div data-aos="fade-up"
+     data-aos-duration="1500">
+
+              <a href="" class="btn btn-light rounded-pill read-btn px-3 py-2 ms-5">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a></div>
             </div>
           </div>
           <div class="carousel-item ms-5">
             <img src="images/slider-image-2.png" class="d-block ms-5" width="28%" alt="...">
             <div class="carousel-caption d-none d-md-block">
-              <h5 class="fs-2">Pick-a-Book</h5>
               <p>"WHAT I LOVE THE <br>MOST ABOUT READING <br>IS THE SENSATION <br>OF DISCOVERY."</p>
-              <p>Adam Strass</p>
+              <a href="" class="btn btn-light rounded-pill read-btn px-3 py-2 ms-5">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
             </div>
           </div>
           
@@ -165,8 +174,8 @@
   <div class="container">
       <div class="discover-title text-center">
           <h4 class="fs-1">Discover Your Next Book</h4>
-          <h6 class="fs-6">Ut enim ad minim veniam, quis nostrud exercitation <br> ullamco 
-            boris nisi ut aliquip ex ea commodo.</h6>
+          <h6 class="fs-6">Ut enim ad minim veniam, quis nostrud exercitation<br> ullamco 
+            boris nisi aliquip commodo.</h6>
       </div>
       <div id="owl-demo" class="owl-carousel owl-theme">
     
@@ -427,18 +436,64 @@
   </div>
   </section>
 
-<section id="our-author">
-  <div class="author">
-    <div class="container">
-      
+  <section id="author">
+    <div class="our-author">
+      <div class="container">
+        
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <div class="author-title text-center pt-4">
+              <h4 class="fs-1 ">Meet Our Authors</h4>
+              <h6 class="fs-6">Ut enim ad minim veniam, quis nostrud exercitation <br> ullamco 
+                boris nisi ut aliquip ex ea commodo.</h6>
+          </div>
+              </div>
+        </div>
+        <div class="row text-center pt-3">
+            <div class="col-md-3">
+              <div class="item"> 
+                <div class="image"><img src="images/t1.jpg" class="rounded-circle" width="250px" height="250px"  alt=""></div>
+                <div class="text-cont">
+                  <h5 class="text-center">Jhon Doe</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="item"> 
+                <div class="image"><img src="images/t2.jpg" class="rounded-circle" width="250px" height="250px" alt=""></div>
+                <div class="text-cont">
+                  <h5 class="text-center">Alex Jhonson</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="item"> 
+                <div class="image"><img src="images/t3.jpg" class="rounded-circle" width="250px" height="250px" alt=""></div>
+                <div class="text-cont">
+                  <h5 class="text-center">Eric Jhonson</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="item"> 
+                <div class="image"><img src="images/t4.jpg" class="rounded-circle"width="250px" height="250px" alt=""></div>
+                <div class="text-cont">
+                  <h5 class="text-center">Ema Jhonson</h5>
+                </div>
+              </div>
+              </div>
+          </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 <script src="js/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" ></script>
     
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
 </body>
 </html>

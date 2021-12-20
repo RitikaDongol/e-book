@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -75,12 +75,12 @@ body{
 }
 #slider{
     position: relative;
-    z-index: -1;
+ 
     margin-top: 78px;
 
 }
 .banner{
-    background: url(../images/banner.jpg) fixed ;
+    background: url(../images/bb.jpg) fixed ;
     background-size: cover;
    
 }
@@ -92,32 +92,45 @@ body{
     bottom: 100px;
     right: 50px;
     font-family: "Playfair Display", serif;
+    line-height: 60px;
 }
 .carousel-caption h5{
     font-size: 60px;
     color: #fff;
     /* text-align: right; */
     font-weight: bolder;
-    line-height: 70px;
+ 
 }
 .carousel-caption p{
     font-size: 48px;
-    font-style: italic;
+
     color: #fff;
     /* text-align: right; */
     letter-spacing: 1px;
-    line-height: 45px;
+    line-height: 55px;
     margin-top: 15px;
+}
+.read-btn{
+    background-color: #000;
+    color: #fff;
+    font-family: 'Open Sans';
+    border: 1px solid#000;
+}
+ .read-btn:hover{
+    background-color: #fff;
+    color: #ecae1a;
+    border: 1px solid #ecae1a;
+    transition: 0.6s;
 }
 /* -----welcome styling---- */
 #welcome{
     padding: 50px 0;
 }
 .welcome h4{
-    font-family: "Playfair Display", serif;
-    font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 900;
     color: #ecae1a;
-    font-size: 38px;
+    font-size: 45px;
 }
 .welcome h6{
     font-size: 18px;
@@ -148,16 +161,16 @@ body{
     background-color:#f8f8f8;
 }
 .discover-title h4{
-    font-family: "Playfair Display", serif;
+    font-family: 'Cormorant Garamond', serif;
     font-weight: bold;
     color: #ecae1a;
-    font-size: 38px;
+
 }
 .discover-title h6{
     font-size: 17px;
     letter-spacing: 1px;
     line-height: 25px;
-    color: #000;
+    color: #4c5258;
     
 }
 /* #owl-demo{
@@ -286,15 +299,14 @@ body{
     font-family: 'Cormorant Garamond', serif ;
     font-weight: 400;
 }
-
+/* ----------genre-styling---------- */
 #genre{
     padding: 60px 0;
 }
 .genre-title h4{
-    font-family: "Playfair Display", serif;
-    font-weight: bold;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 900;
     color: #ecae1a;
-    font-size: 38px;
 }
 .genre-title h6{
     font-size: 17px;
@@ -320,8 +332,11 @@ body{
       text-align: center;
       padding: 10px;
   }
-.genre .item:hover{
-    transform: translateY(12px);
+  .genre .item {
+      overflow: hidden;
+  }
+.genre .item img:hover{
+    transform: scale(1.5);
     transition: all 0.5s;
 }
 .genre a{
@@ -331,3 +346,42 @@ body{
 .genre a:hover{
     color:#ecae1a;
 }
+/* ------------------our-authors-styling----------- */
+.our-author{
+    padding: 10px 0px;
+    background-color: rgb(255, 245, 232);
+  }
+  .author-title h4{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 900;
+    color: #ecae1a;
+}
+.author-title h6{
+    font-size: 17px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    color: #4c5258;
+    
+}
+  .our-author .item {
+      overflow: hidden;
+      padding: 15px 0px;
+  }
+  .our-author .item h5 {
+      font-weight: 600;
+      font-size: 18px;
+      margin-bottom: 8px;
+      margin-top: 30px;
+  }
+  .our-author .item h6 {
+      font-weight: 600;
+      font-size: 16px;
+      color: #777;
+  }
+  .image{
+    transition: 0.3s;
+  }
+  .image:hover{
+  transform: translateY(10px);
+  }
+ 
