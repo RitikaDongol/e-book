@@ -1,3 +1,8 @@
+// window.addEventListener("scroll", function(){
+//     var navbar = document.querySelector(".navbar");
+//     navbar.classList.toggle("sticky", window.scrollY > 0);
+// });
+
 $(document).ready(function() {
     $(window).scroll(function(){
         if(this.scrollY > 500){
@@ -5,6 +10,7 @@ $(document).ready(function() {
         }else{
             $('.arrow').removeClass("show");
         }
+        
     });
 
     $('.arrow').click(function(){
@@ -52,3 +58,47 @@ $(document).ready(function() {
         }
     });
 });
+
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if(this.scrollY>30){
+            $('.navbar').addClass("sticky");
+
+        }else{
+            $('.navbar').removeClass("sticky");
+        }
+    });
+    
+    
+    
+});
+
+jQuery(function($) {
+  
+    // Function which adds the 'animated' class to any '.animatable' in view
+    var doAnimations = function() {
+      
+      // Calc current offset and get all animatables
+      var offset = $(window).scrollTop() + $(window).height(),
+          $animatables = $('.animatable');
+      
+      // Unbind scroll handler if we have no animatables
+      if ($animatables.length == 0) {
+        $(window).off('scroll', doAnimations);
+      }
+      
+      // Check all animatables and animate them if necessary
+          $animatables.each(function(i) {
+         var $animatable = $(this);
+              if (($animatable.offset().top + $animatable.height() - 20) < offset) {
+          $animatable.removeClass('animatable').addClass('animated');
+              }
+      });
+  
+      };
+    
+    // Hook doAnimations on scroll, and trigger a scroll
+      $(window).on('scroll', doAnimations);
+    $(window).trigger('scroll');
+  
+  });
