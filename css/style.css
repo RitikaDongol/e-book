@@ -622,6 +622,9 @@ body{
     .register-img{
         display: none;
     }
+    .navbar li{
+        text-align: center;
+    }
 }
 /* footer css from here  */
 *, *:before, *:after {

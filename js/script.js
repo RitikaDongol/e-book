@@ -57,11 +57,92 @@ $(document).ready(function() {
             }
         }
     });
+    $('#owl-demo2').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        autoplayHoverPause:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
+    $('#owl-demo3').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        autoplayHoverPause:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
+    $('#owl-demo4').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        autoplayHoverPause:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
+    $('#owl-demo5').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        autoplayHoverPause:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        
+        responsive:{
+            0:{
+                items:2
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
 });
+
 
 $(document).ready(function(){
     $(window).scroll(function(){
-        if(this.scrollY>30){
+        if(this.scrollY>50){
             $('.navbar').addClass("sticky");
 
         }else{
